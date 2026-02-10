@@ -1,0 +1,14 @@
+ALTER TABLE `users` ADD `username` varchar(50);--> statement-breakpoint
+ALTER TABLE `users` ADD `passwordHash` varchar(255);--> statement-breakpoint
+ALTER TABLE `users` ADD `firstName` varchar(100);--> statement-breakpoint
+ALTER TABLE `users` ADD `lastName` varchar(100);--> statement-breakpoint
+ALTER TABLE `users` ADD `phone` varchar(20);--> statement-breakpoint
+ALTER TABLE `users` ADD `address` text;--> statement-breakpoint
+ALTER TABLE `users` ADD `city` varchar(100);--> statement-breakpoint
+ALTER TABLE `users` ADD `state` varchar(50);--> statement-breakpoint
+ALTER TABLE `users` ADD `zipCode` varchar(20);--> statement-breakpoint
+ALTER TABLE `users` ADD `donutShopName` varchar(255);--> statement-breakpoint
+ALTER TABLE `users` ADD `yearsInBusiness` int;--> statement-breakpoint
+ALTER TABLE `users` ADD `numberOfStores` int;--> statement-breakpoint
+ALTER TABLE `users` ADD `grossMonthlyIncome` decimal(15,2);--> statement-breakpoint
+ALTER TABLE `users` ADD CONSTRAINT `users_username_unique` UNIQUE(`username`);
